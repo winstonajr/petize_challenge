@@ -1,0 +1,27 @@
+{
+  "search": {
+    "title": "Search d_evs",
+    "placeholder": "Pesquisar",
+    "button": "Pesquisar",
+    "user_not_found": "Não há usuários com esse nome",
+    "error": "Ocorreu um erro durante a busca"
+  },
+  "profile": {
+    "followers": "seguidores",
+    "following": "seguindo",
+    "contact": "Contato",
+    "website": "Site",
+    "twitter": "Twitter",
+    "repos_title": "Repositórios",
+    "sort_by": "Ordenar por",
+    "no_repos": "Nenhum repositório encontrado",
+    "stars": "estrelas",
+    "updated": "Atualizado {{time}}"
+  },
+  "sort": {
+    "created": "Criação",
+    "updated": "Atualização",
+    "pushed": "Push",
+    "full_name": "Nome completo"
+  }
+}

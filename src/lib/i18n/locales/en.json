@@ -1,0 +1,27 @@
+{
+  "search": {
+    "title": "Search d_evs",
+    "placeholder": "Search",
+    "button": "Search",
+    "user_not_found": "No users with this name",
+    "error": "An error occurred during the search"
+  },
+  "profile": {
+    "followers": "followers",
+    "following": "following",
+    "contact": "Contact",
+    "website": "Website",
+    "twitter": "Twitter",
+    "repos_title": "Repositories",
+    "sort_by": "Sort by",
+    "no_repos": "No repositories found",
+    "stars": "stars",
+    "updated": "Updated {{time}}"
+  },
+  "sort": {
+    "created": "Created",
+    "updated": "Updated",
+    "pushed": "Pushed",
+    "full_name": "Full name"
+  }
+}
