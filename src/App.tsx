@@ -1,3 +1,12 @@
+import { Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Profile from './pages/Profile';
+
 export default function App() {
-  return <h1></h1>;
+  return (
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/profile/:username' element={<Profile />} />
+    </Routes>
+  );
 }
