@@ -1,0 +1,18 @@
+:root {
+  /* Brand Colors */
+  --brand-blue: #0069ca;
+  --brand-purple: #8c19d2;
+  --brand-purple-hover: #7d3c98;
+  --brand-purple-light: #eaddff99;
+  --bg-gray: #f3f3f3;
+  --bg-white: #fcfcfc;
+
+  /* Neutral Colors */
+  --text-primary: #171923;
+  --text-secondary: #4a5568;
+  --text-tertiary: #2d3748;
+  --border-gray: #e2e8f0;
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif;
+}
