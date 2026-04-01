@@ -16,3 +16,16 @@
   /* Typography */
   --font-family: 'Inter', sans-serif;
 }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-gray);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
