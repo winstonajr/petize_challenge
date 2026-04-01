@@ -27,7 +27,7 @@ export default function SearchForm() {
 
   return (
     <Flex
-      gap={4}
+      gap='2rem'
       width='100%'
       maxWidth='37rem'
       px='0.875rem'
@@ -96,8 +96,12 @@ export default function SearchForm() {
       {!isMobile && (
         <Button
           onClick={handleSearch}
-          px={8}
-          height='3.5rem'
+          height='auto'
+          py='0.625rem'
+          px='3.59375rem'
+          maxWidth='11rem'
+          fontSize='1.125rem'
+          fontWeight={600}
           borderRadius='0.25rem'
           bg='var(--brand-purple)'
           color='white'
