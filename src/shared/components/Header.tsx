@@ -28,7 +28,7 @@ export default function Header({ currentUser }: HeaderProps) {
   };
 
   return (
-    <Box bg='var(--bg-white)' py={5} position='sticky' top={0}>
+    <Box bg='var(--bg-white)' py={5} position='sticky' top={0} zIndex={999}>
       <Container maxWidth='full' px={28}>
         <Flex alignItems='center' gap='119'>
           <Heading
