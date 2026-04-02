@@ -13,9 +13,27 @@ i18n
       pt: { translation: pt },
     },
     fallbackLng: 'en',
+    supportedLngs: ['en', 'pt'],
+    nonExplicitSupportedLngs: true,
+    load: 'languageOnly',
     interpolation: {
       escapeValue: false,
     },
+    detection: {
+      order: [
+        'navigator',
+        'htmlTag',
+        'localStorage',
+        'cookie',
+        'path',
+        'subdomain',
+      ],
+      caches: ['localStorage'],
+    },
   });
+
+i18n.on('languageChanged', lng => {
+  document.documentElement.lang = lng;
+});
 
 export default i18n;

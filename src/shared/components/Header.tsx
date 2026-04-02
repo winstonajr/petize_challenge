@@ -10,6 +10,7 @@ import {
 } from '@chakra-ui/react';
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import { FiSearch } from 'react-icons/fi';
 
 interface HeaderProps {
@@ -17,8 +18,10 @@ interface HeaderProps {
 }
 
 export default function Header({ currentUser }: HeaderProps) {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [headerSearch, setHeaderSearch] = useState('');
+  const title = t('search.title').split(' ');
 
   const handleHeaderSearch = () => {
     if (headerSearch.trim()) {
@@ -43,7 +46,7 @@ export default function Header({ currentUser }: HeaderProps) {
               color='var(--brand-blue)'
               fontWeight='medium'
             >
-              Search
+              {title[0]}
             </Text>{' '}
             <Text
               as='span'
@@ -51,7 +54,7 @@ export default function Header({ currentUser }: HeaderProps) {
               color='var(--brand-purple)'
               fontWeight='medium'
             >
-              d_evs
+              {title[1]}
             </Text>
           </Heading>
 
@@ -71,7 +74,7 @@ export default function Header({ currentUser }: HeaderProps) {
                 px='0.875rem'
                 py='0.5rem'
                 height='auto'
-                placeholder={currentUser || 'Search'}
+                placeholder={currentUser || t('search.placeholder')}
                 value={headerSearch}
                 onChange={e => setHeaderSearch(e.target.value)}
                 onKeyDown={e => e.key === 'Enter' && handleHeaderSearch()}
